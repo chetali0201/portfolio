@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+background:linear-gradient(
+180deg,
+#FFF8FB 0%,
+#FFF4F8 100%
+);
+
+color:#2B1C26;
+
+margin:0;
+
+padding:0;
+}
+
+.glass{
+background:rgba(255,255,255,.92);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(236,72,153,.10);
+
+box-shadow:
+0 10px 30px rgba(255,182,193,.14);
+}
+
+.font-display{
+color:#24121E;
+}
+/* Section Titles */
+
+h2{
+
+font-size:25px !important;
+
+font-weight:800 !important;
+
+color:#2f2932 !important;
+
+line-height:1.1;
+
+letter-spacing:-1px;
+
+}
+
+.eyebrow{
+
+font-size:30px !important;
+
+font-weight:700 !important;
+
+color:#EC4899 !important;
+
+letter-spacing:.18em;
+
+}
+
+@media(max-width:768px){
+
+h2{
+
+font-size:38px !important;
+
+}
+
+}
+
+/* Paragraph visibility */
+
+.text-paper\/50,
+.text-paper\/55,
+.text-paper\/60,
+.text-paper\/65{
+
+color:#4A3743 !important;
+
+font-size:18px !important;
+
+line-height:1.8;
+
+}
