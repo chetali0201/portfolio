@@ -14,6 +14,8 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
+   return <h1>Portfolio Loaded Successfully 🚀</h1>
+
   const { theme, toggleTheme } = useTheme()
   const [loading, setLoading] = useState(true)
 
