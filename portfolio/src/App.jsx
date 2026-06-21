@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import useTheme from './hooks/useTheme'
+
 import Loader from './components/Loader'
 import CursorGlow from './components/CursorGlow'
 import Navbar from './components/Navbar'
@@ -26,6 +27,7 @@ export default function App() {
     <>
       <Loader loading={loading} />
       <CursorGlow />
+
       <Navbar theme={theme} toggleTheme={toggleTheme} />
 
       <main className="relative">

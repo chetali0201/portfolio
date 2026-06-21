@@ -67,9 +67,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.35 }}
             className="mt-6 max-w-xl text-paper/60 leading-relaxed"
           >
-            I design and build data-rich products end to end — from interface to
-            inference. My work sits at the intersection of clean engineering,
-            considered design, and applied AI.
+            I build responsive and modern web applications using HTML, CSS, JavaScript and React.
           </motion.p>
 
           <motion.div
