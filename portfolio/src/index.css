@@ -91,3 +91,10 @@ html, body {
 * {
   box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden !important;
+}
+
+#root {
+  overflow-x: hidden;
+}
