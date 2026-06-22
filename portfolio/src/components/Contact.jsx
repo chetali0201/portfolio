@@ -118,11 +118,7 @@ className="glass rounded-2xl p-4 flex gap-3"
 
 <FiMail size={18}/>
 
-<span>
-
-[chetalikumbhare0212@gmail.com](mailto:chetalikumbhare0212@gmail.com)
-
-</span>
+<span>chetalikumbhare0212@gmail.com</span>
 
 </a>
 
@@ -153,19 +149,6 @@ className="glass p-3 rounded-xl"
 </a>
 
 </div>
-
-<a
-href="/resume.pdf"
-download
-className="glass rounded-full px-6 py-3 inline-flex gap-2"
-
->
-
-<FiDownload/>
-
-Resume
-
-</a>
 
 </div>
 

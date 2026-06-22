@@ -82,13 +82,7 @@ export default function Hero() {
             >
               View Projects
             </button>
-            <a
-              href="/resume-chetali-kumbhare.pdf"
-              download
-              className="px-7 py-3.5 rounded-full glass font-semibold text-sm flex items-center gap-2 hover:border-signal-cyan/40 transition-all hover:scale-[1.03] active:scale-95"
-            >
-              <FiDownload size={15} /> Download Resume
-            </a>
+            
           </motion.div>
 
           <motion.div
