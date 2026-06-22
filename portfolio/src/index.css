@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* RESET */
+
+html,
+body,
+#root{
+margin:0;
+padding:0;
+width:100%;
+overflow-x:hidden;
+}
+
+*{
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* LIGHT MODE */
+
 body{
 background:linear-gradient(
 180deg,
@@ -11,10 +32,25 @@ background:linear-gradient(
 
 color:#2B1C26;
 
-margin:0;
-
-padding:0;
+transition:
+background .35s ease,
+color .35s ease;
 }
+
+/* SOFT DARK MODE */
+
+.dark body{
+background:
+linear-gradient(
+180deg,
+#F8EEF6 0%,
+#EFE4F4 100%
+)!important;
+
+color:#2B1C26!important;
+}
+
+/* GLASS */
 
 .glass{
 background:rgba(255,255,255,.92);
@@ -25,76 +61,95 @@ border:1px solid rgba(236,72,153,.10);
 
 box-shadow:
 0 10px 30px rgba(255,182,193,.14);
+
+transition:.3s;
 }
+
+.dark .glass{
+background:
+rgba(255,255,255,.72)!important;
+
+border:
+1px solid rgba(236,72,153,.14);
+
+box-shadow:
+0 8px 20px rgba(236,72,153,.08);
+}
+
+/* TITLES */
 
 .font-display{
 color:#24121E;
 }
-/* Section Titles */
+
+.dark .font-display{
+color:#24121E!important;
+}
 
 h2{
+font-size:25px!important;
 
-font-size:25px !important;
+font-weight:800!important;
 
-font-weight:800 !important;
-
-color:#2f2932 !important;
+color:#2F2932!important;
 
 line-height:1.1;
 
 letter-spacing:-1px;
+}
 
+.dark h2{
+color:#2F2932!important;
 }
 
 .eyebrow{
+font-size:30px!important;
 
-font-size:30px !important;
+font-weight:700!important;
 
-font-weight:700 !important;
-
-color:#f34ea0 !important;
+color:#F34EA0!important;
 
 letter-spacing:.18em;
-
 }
 
-@media(max-width:768px){
-
-h2{
-
-font-size:38px !important;
-
+.dark .eyebrow{
+color:#EC4899!important;
 }
 
-}
-
-/* Paragraph visibility */
+/* TEXT */
 
 .text-paper\/50,
 .text-paper\/55,
 .text-paper\/60,
 .text-paper\/65{
 
-color:#4A3743 !important;
+color:#4A3743!important;
 
-font-size:18px !important;
+font-size:18px!important;
 
 line-height:1.8;
 
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  width: 100%;
-}
-* {
-  box-sizing: border-box;
-}
-html, body {
-  overflow-x: hidden !important;
+
+.dark .text-paper\/50,
+.dark .text-paper\/55,
+.dark .text-paper\/60,
+.dark .text-paper\/65{
+
+color:#55414D!important;
+
 }
 
-#root {
-  overflow-x: hidden;
+/* MOBILE */
+
+@media(max-width:768px){
+
+h2{
+font-size:38px!important;
+}
+
+.glass{
+backdrop-filter:none;
+}
+
 }

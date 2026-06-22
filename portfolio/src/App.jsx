@@ -15,33 +15,69 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
-  const { theme, toggleTheme } = useTheme()
-  const [loading, setLoading] = useState(true)
 
-  useEffect(() => {
-    const t = setTimeout(() => setLoading(false), 1400)
-    return () => clearTimeout(t)
-  }, [])
+const { theme, toggleTheme } = useTheme()
 
-  return (
-    <>
-      <Loader loading={loading} />
-      <CursorGlow />
+const [loading, setLoading] = useState(true)
 
-      <Navbar theme={theme} toggleTheme={toggleTheme} />
+useEffect(() => {
 
-      <main className="relative">
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Services />
-        <Experience />
-        <Testimonials />
-        <Contact />
-      </main>
+const t = setTimeout(() => {
+setLoading(false)
+}, 1400)
 
-      <Footer />
-    </>
-  )
+return () => clearTimeout(t)
+
+}, [])
+
+return (
+
+<div
+className={
+theme === 'dark'
+? 'dark min-h-screen'
+: 'min-h-screen'
+}
+>
+
+<Loader loading={loading}/>
+
+<CursorGlow/>
+
+<Navbar
+theme={theme}
+toggleTheme={toggleTheme}
+/>
+
+<main
+className="
+relative
+overflow-x-hidden
+"
+>
+
+<Hero/>
+
+<About/>
+
+<Skills/>
+
+<Projects/>
+
+<Services/>
+
+<Experience/>
+
+<Testimonials/>
+
+<Contact/>
+
+</main>
+
+<Footer/>
+
+</div>
+
+)
+
 }
