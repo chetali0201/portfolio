@@ -82,3 +82,8 @@ font-size:18px !important;
 line-height:1.8;
 
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
